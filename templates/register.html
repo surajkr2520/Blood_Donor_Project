@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Blood Donation Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Register</h1>
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('login') }}">Login</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form method="POST" action="{{ url_for('register') }}">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="blood_type">Blood Type</label>
+                        <input type="text" id="blood_type" name="blood_type" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact_info">Contact Info</label>
+                        <input type="text" id="contact_info" name="contact_info" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Blood Donation Service. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
