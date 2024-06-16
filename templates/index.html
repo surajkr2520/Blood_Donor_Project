@@ -12,8 +12,14 @@
             <h1>Welcome to the Blood Donation Service</h1>
             <p>Connecting donors with recipients efficiently and securely.</p>
             <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('profile') }}">Profile</a>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                {% else %}        
                 <a href="{{ url_for('register') }}">Register</a>
                 <a href="{{ url_for('login') }}">Login</a>
+                {%endif%}
             </nav>
         </div>
     </header>
