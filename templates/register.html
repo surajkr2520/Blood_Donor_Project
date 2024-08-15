@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Blood Donation Service</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -32,9 +33,20 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" required>
                     </div>
+                    <!--Added dropdown menu-->
                     <div class="form-group">
                         <label for="blood_type">Blood Type</label>
-                        <input type="text" id="blood_type" name="blood_type" required>
+                        <select id="blood_type" name="blood_type" required>
+                            <option value="">Select your blood type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="location">Location</label>
