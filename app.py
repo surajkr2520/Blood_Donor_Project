@@ -91,4 +91,4 @@ def create_database():
 # Main block to run the app and create the database if it doesn't exist
 if __name__ == '__main__':
     create_database()
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=80)
