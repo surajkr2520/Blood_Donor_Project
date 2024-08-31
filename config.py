@@ -1,0 +1,6 @@
+customHost="user.crkcug0i0px4.eu-north-1.rds.amazonaws.com"
+customUser="bloodonor"
+customPass="bloodonor$1234"
+customDB="user"
+customBucket="bloodonoradduser"
+customRegion="eu-north-1"
